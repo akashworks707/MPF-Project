@@ -1,0 +1,189 @@
+/***********CUSTOM-FONT********/
+@font-face {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    src: url(../fonts/NotoSansBengali-Bold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Noto Sans Bengali', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+.container{
+    max-width: 100%;
+}
+/************GLOBAL-COLOR*************/
+:root {
+    --primary: #046DB5;
+    --secondry: #DBCA72;
+    --black: #000; 
+    --white: #fff; 
+    --text: #612929; 
+}
+
+                /***MAIN-STYLE-CSS***/
+                
+/****************HEADER-STYLE-START*************/
+.header-top-section {
+    background-image: url("../img/header-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.header-top-section .container{
+    padding-right: 8px;
+    padding-left: 3px;
+}
+.header-top-section .header-left .logo {
+    width: 52px;
+}
+.header-top-section .header-left .logo img{
+    width: 100%;
+}
+.header-top-section .header-left h3{
+    font-size: 9px;
+    line-height: 13px;
+    color: var(--primary);
+}
+.header-top-section .header-right a{
+    font-size: 13px;
+    line-height: 13px;
+    color: var(--primary);
+}
+.header-top-section .header-right .menu-bar{
+    width: 32px;
+}
+.header-top-section .header-right .menu-bar img{
+    width: 100%;    
+}
+.header-bottom-section .container{
+    background-color: var(--secondry);
+    max-width: 95%;
+    border-radius: 0px 0px 20px 20px;
+}
+.header-bottom-section p{
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--black);
+    padding: 10px 0;
+}
+/****************FOOTER-STYLE-START*************/
+.footer-section{
+    background: var(--primary);
+}
+.footer-section .container{
+    padding: 0 35px;
+    padding-bottom: 30px;
+}
+.footer-section .footer-logo{
+    width: 111px;
+    margin: 0 auto;
+    margin-top: -55px;
+}
+.footer-section .footer-logo img{
+    width: 100%;
+}
+.footer-section .info-col{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.footer-section .info-col p{
+    font-size: 8px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer-section .info-col p a{
+    color: var(--white);
+}
+.footer-section .links .col-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0; 
+    max-width: 18%;
+}
+.footer-section .links{
+    margin-bottom: 18px;
+    justify-content: space-around;
+}
+.footer-section .links .link{
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 1px;
+    color: var(--white);
+    position: relative;
+    padding-left: 8px;
+}
+.footer-section .links .link::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.footer-section .payment img{
+    width: 100%;
+}
+.footer-section .govt-logo{
+    width: 55px;
+    margin: 12px auto;
+}
+.footer-section .govt-logo img{
+    width: 100%;
+}
+.footer-section  .govt-text{
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-align: center;
+}
+/***********NAVIGATION-STYLE-CSS*********/
+.navigation-section {
+    background: #DBCA72;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navigation-section .col{
+    max-width: 20%;
+    text-align: center;
+}
+.navigation-section .col p{
+    font-size: 9px;
+    line-height: 11px;
+    font-weight: 400;
+    color: var(--text);
+}
+.navigation-section .col img{
+    width: 35px;
+}
+.navigation-section .row{
+  justify-content: space-between;
+  align-items: end;
+}
+.navigation-section .row p{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.navigation-section .row a:hover{
+    text-decoration: none;
+}
+.navigation-section .back img{
+    width: 28px;
+}
+.main-content-section{
+    padding: 200px 0;
+}
